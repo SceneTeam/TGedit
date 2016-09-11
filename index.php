@@ -1,7 +1,7 @@
 <?php
 ob_start();
-define('API_KEY','253197650:AAHcitPdzco52fFtVcxH-O5LNq_oF4lv6zQ');
-$admin = "100096055";
+define('API_KEY','292180595:AAH5p8kZ0RmRgbwLjGt_widVbr4l7r6IqlU');
+$admin = "292085844";
 function bot($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
     $ch = curl_init();
@@ -45,7 +45,7 @@ if (isset($update->edited_message)){
   //$up = file_get_contents(__DIR__.'/users/'.$eid.'.json');
   //str_replace("edited_message","message",$up);
 }elseif(preg_match('/^\/([Ss]tart)/',$text1)){
-  $text = "به ربات ادیت نکن\nخوش آمدید\nبرای اد کردن من به گروه بر روی لینک زیر بزنید\nhttps://telegram.me/TGEditnakonBOT?startgroup=new";
+  $text = "به ربات ادیت نکن\nخوش آمدید\nبرای اد کردن من به گروه بر روی لینک زیر بزنید\nhttps://telegram.me/Bad_black_wolf_2bot?startgroup=new";
   bot('sendmessage',[
     'chat_id'=>$chat_id,
     'text'=>$text,
@@ -53,10 +53,10 @@ if (isset($update->edited_message)){
     'reply_markup'=>json_encode([
       'inline_keyboard'=>[
         [
-          ['text'=>'Kiarash_Gh14','url'=>'https://telegram.me/kiarash_gh14']
+          ['text'=>'BAD_BLACK_WOLF','url'=>'https://telegram.me/BAD_BLACK_WOLF']
         ],
         [
-          ['text'=>'Channel','url'=>'https://telegram.me/EleGanceTM']
+          ['text'=>'Grouo ','url'=>'https://telegram.me/joinchat/EWjgVD_F2bdTI9oq_poc9A']
         ]
       ]
     ])
