@@ -1,7 +1,7 @@
 <?php
 ob_start();
-define('API_KEY','292180595:AAH5p8kZ0RmRgbwLjGt_widVbr4l7r6IqlU');
-$admin = "292085844";
+define('API_KEY','***');
+$admin = "100096055";
 function bot($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
     $ch = curl_init();
@@ -56,7 +56,7 @@ if (isset($update->edited_message)){
           ['text'=>'BAD_BLACK_WOLF','url'=>'https://telegram.me/BAD_BLACK_WOLF']
         ],
         [
-          ['text'=>'Grouo ','url'=>'https://telegram.me/joinchat/EWjgVD_F2bdTI9oq_poc9A']
+          ['text'=>'Grouح ','url'=>'https://telegram.me/joinchat/EWjgVD_F2bdTI9oq_poc9A']
         ]
       ]
     ])
